@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>multi-step form</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="background-box">
+                <div class="containerfor-whole-content">
+                    <div class="sidebar-container">
+                        <div class="stepDetails">
+                            <div class="step">
+                                <div class="wholeplanInfo">
+                                  <div id="circle1">
+                                     <p class="num1">1</p>
+                                   </div>
+                                  <p class="stepmsg">Step 1 </p>
+                                </div>
+                                <p class="stepInfo">Your info</p>
+                            </div>
+                            <div class="step">
+                                <div class="wholeplanInfo">
+                                <div class="circle">
+                                    <p class="num2">2</p></div>
+                                <p class="stepmsg">Step 2</p>
+                                </div>
+                                <p class="stepInfo">Select plan</p>
+                            </div>
+                            <div class="step">
+                                <div class="wholeplanInfo">
+                                <div class="circle">
+                                    <p class="num3">3</p></div>
+                                <p class="stepmsg">Step 3</p>
+                                </div>
+                                <p class="stepInfo">Add-ons</p>
+                            </div>
+                            <div class="step">
+                                <div class="wholeplanInfo">
+                                <div class="circle">
+                                    <p id="num4">4</p></div>
+                                <p class="stepmsg">Step 4</p>
+                                </div>
+                                <p class="stepInfo">Summary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerforPersonalINfo hidden">
+              
+                        <div class="details">
+                            <div class="Title-personalInfo">
+                                <h1>Personal info</h1>
+                              </div>
+                              <div class="TextInfo">
+                                <p>Please provide your name, email address, and phone number.</p>
+                              </div>
+                                
+                            <form>
+                                    <div class="Info">
+                                        <label for="Name">Name</label>
+                                    <input type="text" placeholder=" e.g. Stephen King" id="Name"
+                                    maxlength="25"
+                                     required/>
+                                    </div>
+                                    <div class="Info">
+                                        <label for="EmailAddress">Email address</label>
+                                    <input type="email" placeholder="e.g. stephenking@lorem.com" id="Email" 
+                                    maxlength="35" required/>
+                                    </div>
+                                    <div class="Info">
+                                        <label for="PhoneNumber">Phone Number</label>
+                                    <input type="number" placeholder="e.g. +1 234 567 890" id="phone" 
+                                    maxlength="25" required/>
+                                    </div>
+        
+                                    <button id="Next" type="submit"onclick="next()" ><a href="selectplan.html">Next Step</a></button>
+                                </label>
+                            </form>
+        
+                        </div>
+                    </div>
+
+                </div>
+               
+                
+            </div>
+            
+        </main>
+        <script src="multi.js"></script>
+    </body>
+</html>
